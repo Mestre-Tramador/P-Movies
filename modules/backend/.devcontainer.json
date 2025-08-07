@@ -1,0 +1,23 @@
+{
+  "image": "gradle:8-jdk21-alpine",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "naco-siren.gradle-language",
+        "redhat.java",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+        "shengchen.vscode-checkstyle",
+        "vmware.vscode-spring-boot",
+        "vscjava.vscode-gradle",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-spring-boot-dashboard"
+      ]
+    }
+  }
+}

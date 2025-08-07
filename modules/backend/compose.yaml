@@ -1,0 +1,7 @@
+name: p-movies-backend
+services:
+  backend:
+    image: 'p-movies-backend:latest'
+    build:
+      context: .
+      dockerfile: Dockerfile

@@ -1,0 +1,12 @@
+name: p-movies-docker
+services:
+  proxy:
+    container_name: 'proxy'
+    extends: 
+      service: nginx
+      file: ./components/compose.yaml    
+  backend:
+    container_name: 'backend'
+    extends:
+      service: backend
+      file: ../modules/backend/compose.yaml

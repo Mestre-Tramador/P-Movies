@@ -1,0 +1,35 @@
+resolver ${DOCKER_RESOLVER_IP};
+
+server {
+  listen ${HTTPS_PORT} ssl;
+
+  server_name ${DNS_HOST};
+
+  ssl_certificate /etc/nginx/ssl/${DNS_HOST}.crt;
+  ssl_certificate_key /etc/nginx/ssl/${DNS_HOST}.key;
+
+  include proxy_params;
+
+  set $backend ${CONTAINER_BACKEND_NAME}:${CONTAINER_BACKEND_HTTP_PORT};
+  set $frontend ${CONTAINER_FRONTEND_NAME}:${CONTAINER_FRONTEND_HTTP_PORT};
+
+  location /api {
+    rewrite ^/api(/.*)$ $1 break;
+
+    proxy_pass http://$backend;
+  }
+
+  location / {
+    proxy_pass http://$frontend;
+  }
+}
+
+server {
+  listen ${HTTP_PORT};
+
+  server_name ${DNS_HOST};
+
+  location / {
+    return 301 https://$host$request_uri;
+  }
+}

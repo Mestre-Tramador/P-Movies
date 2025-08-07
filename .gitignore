@@ -1,0 +1,7 @@
+##################
+# Docker Compose #
+##################
+/compose.yaml
+/compose.yml
+/docker-compose.yaml
+/docker-compose.yml

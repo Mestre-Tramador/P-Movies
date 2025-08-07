@@ -1,0 +1,8 @@
+name: p-movies-docker-components
+services:
+  nginx:
+    image: 'p-movies-nginx:latest'
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+      network: host

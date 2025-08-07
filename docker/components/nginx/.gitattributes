@@ -1,0 +1,5 @@
+#########
+# NGINX #
+#########
+includes/*                linguist-language=Nginx linguist-detectable=true
+templates/*.conf.template linguist-language=Nginx linguist-detectable=true

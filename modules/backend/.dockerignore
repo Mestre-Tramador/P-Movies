@@ -1,0 +1,44 @@
+##########
+# Gradle #
+##########
+.gradle/
+
+##################
+# Gradle Wrapper #
+##################
+gradlew.bat
+
+#################
+# Compiled Java #
+#################
+build/
+
+##########
+# Docker #
+##########
+.dockerignore
+compose.yaml
+Dockerfile
+
+###########
+# VS Code #
+###########
+.vscode/
+.devcontainer.json
+
+#######
+# Git #
+#######
+.gitattributes
+.gitignore
+
+################
+# EditorConfig #
+################
+.editorconfig
+
+#################
+# Documentation #
+#################
+docs/
+README.md

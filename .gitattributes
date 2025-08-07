@@ -1,0 +1,25 @@
+#############
+# All files #
+#############
+* text=auto eol=lf
+
+############
+# Markdown #
+############
+*.md diff=markdown
+
+########
+# YAML #
+########
+*.yml  linguist-language=YAML linguist-detectable=true
+*.yaml linguist-language=YAML linguist-detectable=true
+
+#########################
+# Environment Variables #
+#########################
+.env.example linguist-language=INI
+
+#################
+# Dev Container #
+#################
+.devcontainer.json  linguist-language=JSON

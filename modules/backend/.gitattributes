@@ -1,0 +1,19 @@
+##########
+# Gradle #
+##########
+*.gradle.kts linguist-detectable=true
+
+##################
+# Gradle Wrapper #
+##################
+gradlew     eol=lf   linguist-language=Shell     linguist-detectable=true
+gradlew.bat eol=crlf linguist-language=Batchfile linguist-detectable=true
+
+gradle/wrapper/gradle-wrapper.jar binary
+
+###################
+# Java Properties #
+###################
+*.properties linguist-language=INI
+
+
